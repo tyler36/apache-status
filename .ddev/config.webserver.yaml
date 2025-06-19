@@ -1,0 +1,8 @@
+# Expose port 8080
+# Visit `:8080/service-status` to see Apache Server Status.
+# @See `.ddev/apache/server-status.config`
+web_extra_exposed_ports:
+  - name: webserver
+    container_port: 8080
+    http_port: 8081
+    https_port: 8080
